@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jogo 2D de Carro – JS Canvas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="gameShell">
+<canvas id="game" width="360" height="640" aria-label="Jogo 2D de Carro"></canvas>
+<div class="hud">
+<div class="topBar">
+<div class="pill" id="scorePill">🏁 Pontos: <span id="score">0</span></div>
+<div style="display:flex; gap:8px;">
+<div class="pill btn" id="pauseBtn" title="Pausar/Retomar (P)">⏸️</div>
+<div class="pill btn" id="soundBtn" title="Som (S)">🔊</div>
+</div>
+</div>
+<div class="centerOverlay" id="overlay">
+<div class="card" id="menu">
+<h1>🚗 Jogo 2D de Carro</h1>
+<p>Desvie dos carros, pegue moedas e faça pontos!</p>
+<p><strong>PC:</strong> ← → ou A/D &nbsp;•&nbsp; <strong>Mobile:</strong> botões na tela</p>
+<div class="actions">
+<button class="primary" id="startBtn">Começar</button>
+<button class="secondary" id="howBtn">Como jogar</button>
+</div>
+</div>
+</div>
+<div class="touchCtrls">
+<div class="padBtn btn" id="leftBtn">◀</div>
+<div class="padBtn btn" id="rightBtn">▶</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="game.js"></script>
+</body>
+</html>
